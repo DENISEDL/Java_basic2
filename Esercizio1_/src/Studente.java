@@ -5,7 +5,7 @@ public class Studente {
     private int identificativo;
 
 
-    Studente(String name, String surname, int identificativo){
+    public Studente(String name, String surname, int identificativo){
         this.name = name;
         this.surname = surname;
         this.identificativo = identificativo;

@@ -57,7 +57,7 @@ public class Auto {
     }
     @Override
     public String toString() {
-    return "(" +
+    return " (" +
             "proprietario : " + proprietario +", cilindrata : " + cilindrata + ", targa : " + targa + ", marca: " + marca + ", modello :"
             + modello + ")";
 

@@ -1,13 +1,24 @@
 public class Gatto extends Animale{
 
+    private String versoAnimale;
+
 
     public Gatto(String versoAnimale) {
-        super(versoAnimale);
+        this.versoAnimale=versoAnimale;
+    }
+
+    public String getVersoAnimale() {
+        return versoAnimale;
+    }
+
+    public void setVersoAnimale(String versoAnimale) {
+        this.versoAnimale = versoAnimale;
     }
 
     @Override
     public void failVerso() {
-        super.failVerso();
+        String verso = versoAnimale;
+        System.out.println("Il verso del gatto è " + verso);
 
     }
 

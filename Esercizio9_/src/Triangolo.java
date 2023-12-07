@@ -1,18 +1,18 @@
 public class Triangolo implements Forma{
 
-    private TipoDiForma tipoDiForma;
+    private TipoDiFormaEnum tipoDiForma;
 
-    public Triangolo(TipoDiForma tipoDiForma) {
+    public Triangolo(TipoDiFormaEnum tipoDiForma) {
         this.tipoDiForma = tipoDiForma;
     }
 
-    public TipoDiForma getTipoDiForma() {
+    public TipoDiFormaEnum getTipoDiForma() {
         return tipoDiForma;
     }
 
     @Override
     public void calcolaArea() {
-        double area = TipoDiForma.TRIANGOLO.getAltezza() * TipoDiForma.TRIANGOLO.getBase() / 2;
+        double area = TipoDiFormaEnum.TRIANGOLO.getAltezza() * TipoDiFormaEnum.TRIANGOLO.getBase() / 2;
         System.out.println("L'area del triangolo è : " + area);
 
     }

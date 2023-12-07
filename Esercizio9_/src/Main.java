@@ -6,8 +6,8 @@
 public class Main {
     public static void main(String[] args) {
 
-        Rettangolo rettangolo = new Rettangolo(TipoDiForma.RETTANGOLO);
-        Triangolo triangolo = new Triangolo(TipoDiForma.TRIANGOLO);
+        Rettangolo rettangolo = new Rettangolo(TipoDiFormaEnum.RETTANGOLO);
+        Triangolo triangolo = new Triangolo(TipoDiFormaEnum.TRIANGOLO);
 
         triangolo.calcolaArea();
         rettangolo.calcolaArea();

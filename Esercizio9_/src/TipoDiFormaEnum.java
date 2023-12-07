@@ -1,4 +1,4 @@
-public enum TipoDiForma {
+public enum TipoDiFormaEnum {
 
     RETTANGOLO(9,10),
     TRIANGOLO(23,32);
@@ -8,7 +8,7 @@ public enum TipoDiForma {
     private final double base;
     private final double altezza;
 
-    TipoDiForma(double base, double altezza) {
+    TipoDiFormaEnum(double base, double altezza) {
         this.base = base;
         this.altezza = altezza;
 

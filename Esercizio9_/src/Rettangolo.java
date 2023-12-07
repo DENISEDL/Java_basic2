@@ -1,18 +1,18 @@
 public class Rettangolo implements Forma {
 
-    private  TipoDiForma tipoDiForma;
+    private TipoDiFormaEnum tipoDiForma;
 
-    public Rettangolo(TipoDiForma tipoDiForma) {
+    public Rettangolo(TipoDiFormaEnum tipoDiForma) {
         this.tipoDiForma = tipoDiForma;
     }
 
-    public TipoDiForma getTipoDiForma() {
+    public TipoDiFormaEnum getTipoDiForma() {
         return tipoDiForma;
     }
 
     @Override
     public void calcolaArea() {
-        double area = TipoDiForma.RETTANGOLO.getBase() * TipoDiForma.RETTANGOLO.getBase();
+        double area = TipoDiFormaEnum.RETTANGOLO.getBase() * TipoDiFormaEnum.RETTANGOLO.getBase();
         System.out.println("L'area del rettangolo è : " + area);
     }
 }

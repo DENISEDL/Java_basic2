@@ -11,7 +11,7 @@ public class Main {
     public static void controlloIntinUnDetermiantoRange(){
         int num1= 1;
         int num2= 3;
-        int numVerifica = 4;
+        int numVerifica = 3 ;
             if (numVerifica < num1 || numVerifica > num2 || num1 > num2) {
                 throw new ArithmeticException();
 

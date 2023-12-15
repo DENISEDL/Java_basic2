@@ -7,31 +7,21 @@
 public class Main {
     public static void main(String[] args) {
 
-        controlloValoreInt(-1, -1);
+        controlloValoreInt(null, null);
 
     }
 
-    public static void controlloValoreInt(int numeratore, int denominatore) {
+    public static void controlloValoreInt(StringBuilder stringBuilder, StringBuilder stringBuilder2) {
         try {
-            if (numeratore == -1) {
-                throw new ArithmeticException();
-            } else {
-                System.out.println("Il numeratore ha un valore");
+            if(stringBuilder == null){
+                System.out.printf("chi vince?FEDE?");
             }
 
-        } catch (ArithmeticException e) {
-            System.out.println("Manca il valore al numeratore : " + e);
-        }
-        try {
-            if (denominatore == -1) {
-                throw new ArithmeticException();
-            } else {
-                System.out.println("Il denominatore ha un valore");
-            }
 
-        } catch (ArithmeticException e) {
-            System.out.println("Manca il valore al denominatore : " + e);
+        }catch (NullPointerException e) {
+            System.out.println("vince il proff ");
         }
+
 
     }
 }

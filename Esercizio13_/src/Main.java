@@ -8,11 +8,11 @@ public class Main {
 
     public static void dividiUnNumeroPerZero(int num){
         try{
-            num = num / 0;
-                throw new ArithmeticException();
+            int result = num / 0;
+
             }
-            catch(ArithmeticException e ){
-                System.out.println("E' presente un errore : " + e);
+            catch(ArithmeticException e){
+                System.out.println("Non possiamo dividere per 0 : " + e);
 
             }
             finally {

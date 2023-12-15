@@ -7,16 +7,17 @@
 public class Main {
     public static void main(String[] args) {
        int[] numeri={1,4,7,10,11,50};
-       provaDivisionePerZero(numeri);
+       provaDivisionePerZero(numeri,8);
     }
 
-    public static void provaDivisionePerZero(int[] numeri) {
+    public static void provaDivisionePerZero(int[] numeri, int index) {
         try {
-            if (numeri.length == numeri[4] / 0)
-                throw new ArithmeticException();
+            int valArray = numeri[5];
+            int div = valArray / 0;
+          System.out.println("divisione"+ div);
         } catch (ArithmeticException e) {
             System.out.println("Indice dell'array non può essere diviso per 0 :" + e);
-        } catch (Exception e ){
+        } catch (ArrayIndexOutOfBoundsException e ){
             System.out.println("Non è presente questo indice nell'array : " + e);
         }
     }

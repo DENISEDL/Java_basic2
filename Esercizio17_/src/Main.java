@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-    Set<String> lista1 = getHashSet();
+        Set<String> lista1 = getHashSet();
         System.out.println("Stampa Hashset riempito" + lista1 + ", Stampa grandezza : " + lista1.size());
 
     }

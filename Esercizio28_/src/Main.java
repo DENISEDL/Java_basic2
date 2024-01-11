@@ -15,11 +15,15 @@ public class Main {
         OffsetDateTime data = OffsetDateTime.parse("2023-03-01T13:00:00Z");
         String anno = String.valueOf(data.getYear());
         System.out.println("L'anno : " + anno);
+        // 2023
         String mese = String.valueOf(data.getMonth());
         System.out.println("Il mese : " + mese);
+        //MARCH
         String giorno = String.valueOf(data.getDayOfMonth());
         System.out.println("Il giorno : " + giorno);
+        //1
         String giornoSettimana = String.valueOf(data.getDayOfWeek());
         System.out.println("Il giorno della settimana : " + giornoSettimana);
+        //WEDNESDAY
     }
 }

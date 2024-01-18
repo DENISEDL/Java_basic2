@@ -8,12 +8,10 @@
 
 public class Main {
     public static void main(String[] args) {
-        Shape forma = ShapeFactory.tipoDiForme(ShapeEnum.RETTANGOLO);
-        Shape forma1 = ShapeFactory.tipoDiForme(ShapeEnum.TRIANGOLO);
-        forma.getDraw();
-        forma1.getDraw();
-        System.out.println("Forma : " + forma);
-        System.out.println("Forma : " + forma1);
+        Shape rettangolo = ShapeFactory.getDraw(ShapeEnum.RETTANGOLO);
+        Shape triangolo = ShapeFactory.getDraw(ShapeEnum.TRIANGOLO);
+        rettangolo.getDraw();
+        triangolo.getDraw();
 
 
     }

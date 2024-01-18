@@ -13,7 +13,6 @@ public class Main {
         Person io = studente.builder();
         Person studente1 = new Person("Luca","Gallo","JAVA",23);
 
-
         System.out.println("Studente " + io);
         System.out.println("Studente " + studente1);
     }

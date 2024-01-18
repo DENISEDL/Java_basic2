@@ -45,7 +45,7 @@ public class Main {
         return result;
      }*/
 
-     final String checkValueStr = value % 5 == 0 ? "Fizz Buzz" : "Buzz";
+     final String checkValueStr = (value % 5 == 0) ? ("Fizz Buzz") : ("Buzz");
      return checkValueStr;
 
 

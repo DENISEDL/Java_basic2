@@ -7,12 +7,14 @@
 
 public class Main {
     public static void main(String[] args) {
-        User user = new User("Denise",28);
-        User user1 = new User("Pippo",28);
+        User user = User.getInstanza();
+        user.setNome("Claudio");
+        user.setEta(30);
         user.stampaInfo();
 
-        user1.setNome("Claudio");
-        user1.setEta(30);
+        User user1 = User.getInstanza();
+        user1.setNome("Denise");
+        user1.setEta(28);
         user1.stampaInfo();
 
     }

@@ -1,10 +1,15 @@
 public class User {
     private String nome;
     private Integer eta;
+    private static User instanza;
+    public static User getInstanza(){
+        if(instanza == null){
+            instanza = new User();
+        }
+        return instanza;
+    }
 
-    public User(String nome, Integer eta) {
-        this.nome = nome;
-        this.eta = eta;
+    public User() {
     }
 
     public String getNome() {
